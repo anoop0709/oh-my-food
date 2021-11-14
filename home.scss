@@ -1,0 +1,133 @@
+@media screen and (max-width :375px)
+{
+    $secondaryColor :#FF79DA;
+    $mainColor:#9356DC;
+    @mixin iconDecoration {
+        left: -70px;
+        height: 20px;
+        color: gray;
+
+    }
+
+body{
+    margin: 0px;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    justify-content: center;
+    border-bottom: 2px solid rgb(185, 180, 180);
+    align-items: center;
+    display: flex;
+
+    & img{
+        height: 30px;
+    }
+}
+#location{
+    width: 100%;
+    height: 50px;
+    background: rgb(219, 217, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & h1{
+        margin-left: 14px;
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+    
+}
+#headings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(240, 237, 237);
+    & h1{
+        font-size: 24px;
+        font-weight: 600;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       
+    }
+    & p{
+        font-size: 17px;
+        font-weight: 300;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: rgba(0,0,0,0.5);
+
+        
+    }
+    & button{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        border-radius: 25px;
+        padding: 15px;
+        font-size: 16px;
+        color: white;
+        background-image:linear-gradient(to top,$mainColor,$secondaryColor) ;
+        border-style: none;
+        cursor: pointer;
+        box-shadow: 0px 1px 5px rgb(139, 138, 138);
+    }
+
+}
+#howitswork{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    & h1{
+        font-size: 22px;
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+    & button{
+        border-radius: 25px;
+        background: rgb(240, 237, 237);
+        padding: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content:flex-start;
+        align-items:center;
+        border-style: none;
+        width: 330px;
+        height: 100px;
+        font-size: 18px;
+        padding-left: 0px;
+        box-shadow: 0px 2px 5px rgb(214, 212, 212);
+        margin-left: 0px;
+     
+    
+        & i:first-child{
+            background:$mainColor;
+            border-radius: 50%;
+            padding: 10px;
+            margin-left: -10px;
+            height: 12px;
+            color: white;
+            }
+            & .fa-mobile-screen-button {
+               @include iconDecoration();
+            }
+            & .fa-list{
+               @include iconDecoration();
+            }
+            & .fa-store{
+                color: $mainColor;
+            }
+
+        }
+    }
+
+}
+    
+
