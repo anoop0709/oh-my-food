@@ -38,6 +38,7 @@
   body {
     margin: 0px;
     width: 100%;
+    position: relative;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   body #loaderContainer {
@@ -52,11 +53,12 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #9bd8d3;
-    opacity: 0.9;
-    position: absolute;
-    -webkit-animation: hide 0s forwards 8s;
-            animation: hide 0s forwards 8s;
+    background: #99E2D0;
+    position: fixed;
+    -webkit-animation: hide 0s forwards 5s;
+            animation: hide 0s forwards 5s;
+    z-index: 99999;
+    opacity: 0.8;
   }
   body #loaderContainer #loader {
     width: 100px;
@@ -64,8 +66,9 @@
     border: 20px solid #FF79DA;
     border-radius: 50%;
     border-top: 20px solid #9356DC;
-    -webkit-animation: loading  linear 1s 8;
-            animation: loading  linear 1s 8;
+    -webkit-animation: loading  linear 1s 5;
+            animation: loading  linear 1s 5;
+    position: absolute;
   }
   header {
     width: 100%;
@@ -212,6 +215,7 @@
   #restaurants {
     background: #f0eded;
     width: 100%;
+    padding-bottom: 50px;
   }
   #restaurants h1 {
     font-size: 23px;
@@ -281,6 +285,46 @@
   #restaurants .cardcontainer i:hover {
     color: #9356DC;
     cursor: pointer;
+  }
+  footer {
+    width: 100%;
+    height: 180px;
+    background: rgba(0, 0, 0, 0.8);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  footer img {
+    width: 120px;
+    height: 20px;
+    -webkit-filter: grayscale(1) invert(1);
+            filter: grayscale(1) invert(1);
+    margin-left: 30px;
+    padding-bottom: 20px;
+  }
+  footer h4 {
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  footer h4 i {
+    font-size: 12px;
+    color: white;
+    margin-left: 30px;
+    margin-right: 15px;
+  }
+  footer h5 {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 30px;
+    font-weight: 300;
   }
 }
 /*# sourceMappingURL=home.css.map */
