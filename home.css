@@ -58,16 +58,19 @@
     -webkit-animation: hide 0s forwards 5s;
             animation: hide 0s forwards 5s;
     z-index: 99999;
-    opacity: 0.8;
+    opacity: 1;
+  }
+  body #loaderContainer h5 {
+    color: #9356DC;
   }
   body #loaderContainer #loader {
-    width: 100px;
-    height: 100px;
-    border: 20px solid #FF79DA;
+    width: 80px;
+    height: 80px;
+    border: 10px solid #FF79DA;
     border-radius: 50%;
-    border-top: 20px solid #9356DC;
-    -webkit-animation: loading  linear 1s 5;
-            animation: loading  linear 1s 5;
+    border-top: 10px solid #9356DC;
+    -webkit-animation: loading  alternate 1s 5;
+            animation: loading  alternate 1s 5;
     position: absolute;
   }
   header {
@@ -275,16 +278,35 @@
     margin-top: 2px;
     float: left;
   }
-  #restaurants .cardcontainer i {
+  #restaurants .cardcontainer #heart {
     float: right;
-    margin-right: 30px;
     font-size: 25px;
     padding-top: 0px;
     margin-top: 25px;
+    margin-right: 50px;
+    color: rgba(0, 0, 0, 0.5);
   }
-  #restaurants .cardcontainer i:hover {
+  #restaurants .cardcontainer #heart .fa-solid {
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    padding-right: 30px;
     color: #9356DC;
-    cursor: pointer;
+  }
+  #restaurants .cardcontainer #heart .fa-regular {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    padding-right: 30px;
+  }
+  #restaurants .cardcontainer #heart .fa-regular:hover + .fa-solid {
+    display: block;
+    color: #9356DC;
+  }
+  #restaurants .cardcontainer #heart .fa-regular:active {
+    display: block;
+    color: #9356DC;
   }
   footer {
     width: 100%;

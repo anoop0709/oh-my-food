@@ -55,16 +55,19 @@
         position: fixed;
         animation: hide 0s forwards 5s;
         z-index: 99999;
-        opacity: 0.8;
+        opacity: 1;
+        & h5{
+            color: $mainColor;
+        }
         
         
         & #loader{
-            width:100px;
-            height: 100px;
-            border: 20px solid $secondaryColor;
+            width: 80px;
+            height: 80px;
+            border: 10px solid $secondaryColor;
             border-radius: 50%;
-            border-top: 20px solid $mainColor;
-            animation: loading  linear 1s 5;
+            border-top: 10px solid $mainColor;
+            animation: loading  alternate 1s 5;
             position: absolute;
         
         }
@@ -85,6 +88,7 @@
     & img{
         height: 30px;
     }
+  
  }
 
  #location{
@@ -261,19 +265,43 @@
                     float: left;
                     }
             }
-                & i{
-                    
-                    float: right;
-                    margin-right: 30px;
-                    font-size: 25px;
-                    padding-top: 0px;
-                    margin-top: 25px;
-                    &:hover{
+            & #heart{
+                
+                float: right;
+                font-size: 25px;
+                padding-top: 0px;
+                margin-top: 25px;
+                margin-right: 50px;
+                color: rgba(0,0,0,0.5);
+                & .fa-solid{
+                    display: none;
+                    position: absolute;
+                    width: 20px;
+                    height: 15px;
+                    padding-right: 30px;
+                    color: $mainColor;
+                   }
+                & .fa-regular{
+                    position: absolute;
+                    width: 20px;
+                    height: 15px;
+                    padding-right: 30px;
+                    &:hover + .fa-solid{
+                        display: block;
                         color: $mainColor;
-                        cursor: pointer;
+                    }
+                        &:active{
+                            display: block;
+                            color: $mainColor;
                         }
+                    
+                   
+                   
+                    
+                   
                     }
                 }
+            }
         }
     & footer{
         width: 100%;
