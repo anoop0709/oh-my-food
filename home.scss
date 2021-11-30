@@ -1,3 +1,366 @@
+  /** laptop version **/
+   
+  $secondaryColor :#FF79DA;
+  $mainColor:#9356DC;
+  $backgroundColor:rgb(240, 237, 237);
+
+  @mixin iconDecoration {
+      left: -70px;
+      height: 20px;
+      color: gray;
+      margin-right: 20px;
+
+  }
+  @mixin footerH {
+      font-size: 16px;
+      color: white;
+      margin-bottom: 0px;
+      padding-bottom: 10px;
+      margin-top: 0px;
+      padding-top: 0px;
+      
+  }
+  @mixin menuMargin {
+      margin-left: 10px;
+      margin-right: 10px;
+      
+  }
+  @keyframes tick {
+      0%{
+          width: 0px;
+          height: 75px;
+          border-radius: 0px 25px 25px 0px;
+          background: none;
+      }
+      100%{
+        width: 70px;
+        height: 75px;
+        background: #99E2D0;
+      }
+    
+  }
+  @keyframes rotate {
+      0%{
+        display: none;
+        background: none;
+        padding: 0px;
+      }
+      
+      100%{
+           transform: rotate(-360deg);
+           display: block;
+      }
+      
+  }
+ 
+ @keyframes loadmenu {
+     0%{
+         width:auto;
+         height: 0px;
+         opacity: 0;
+     }
+     100%{
+         width:auto;
+         height:75px;
+         display: none;
+     }
+ }
+ @keyframes menucontent {
+     0%{
+     width: auto;
+     height: 0px;
+     opacity: 0;
+     }
+     100%{
+         width: auto;
+         height: 50px;
+         opacity: 1;
+     }
+ }
+
+ body{
+     margin-left: 430px;
+     padding: 0px;
+     max-width: 900px;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     justify-content: center;
+     align-content: center;
+     & #loaderContainer{
+         display: none;
+     }
+ }
+   
+  
+ 
+  header{
+     width: 100%;
+     padding-top: 25px;
+     padding-bottom: 25px;
+     justify-content: center;
+     border-bottom: 2px solid rgb(185, 180, 180);
+     align-items: center;
+     display: flex;
+ 
+     & img{
+         height: 60px;
+         padding: 20px;
+     }
+   
+  }
+ 
+  #location{
+     width: 100%;
+     height: 50px;
+     background: rgb(219, 217, 217);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     & h1{
+         margin-left: 14px;
+         font-size: 18px;
+         font-weight: 400;
+ 
+     }
+  }
+ 
+  #headings{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: $backgroundColor;
+   & h1{
+       font-size: 25px;
+       font-weight: 600;
+       padding-top: 20px;
+       padding-bottom: 20px;
+      
+   }
+   & p{
+       font-size: 17px;
+       font-weight: 300;
+       margin-left: 20px;
+       margin-right: 20px;
+       margin-top: 0px;
+       margin-bottom: 0px;
+       color: rgba(0,0,0,0.5);
+
+       
+   }
+   & button{
+       margin-top: 30px;
+       margin-bottom: 50px;
+       border-radius: 25px;
+       padding: 15px;
+       font-size: 16px;
+       color: white;
+       background-image:linear-gradient(to top,$mainColor,$secondaryColor) ;
+       border-style: none;
+       cursor: pointer;
+       box-shadow: 0px 1px 5px rgb(139, 138, 138);
+   }
+
+}
+
+#howitswork{
+   width: 100%;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   & h1{
+       font-size: 25px;
+       margin-bottom: 50px;
+       width: 100%;
+       margin-left: 360px;
+   }
+   & button{
+       border-radius: 25px;
+       background:rgb(240, 237, 237);
+       padding: 20px;
+       margin-bottom: 30px;
+       display: flex;
+       justify-content:flex-start;
+       align-items:center;
+       border-style: none;
+       width: 330px;
+       height: 80px;
+       font-size: 18px;
+       padding-left: 0px;
+       margin-left: 25px;
+       box-shadow: 0px 2px 5px rgb(214, 212, 212);
+      
+    
+   
+       & i:first-child{
+           background:$mainColor;
+           border-radius: 50%;
+           padding: 10px;
+           margin-left: -10px;
+           height: 12px;
+           color: white;
+           margin-right: 20px;
+           font-size: small;
+       
+           }
+           & .fa-mobile-screen-button {
+              @include iconDecoration();
+           }
+           & .fa-list{
+              @include iconDecoration();
+           }
+           & .fa-store{
+               color: $mainColor;
+               margin-right: 20px;
+           }
+
+       }
+}
+
+#restaurants{
+    background: $backgroundColor;
+    max-width: 900px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    & h1{
+        font-size: 25px;
+        margin-left: 380px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 100%;
+        
+     }
+     & .cardcontainer{
+       width:340px;
+       height: 260px;
+       box-shadow: 0 5px 10px rgb(214, 209, 209);
+       border-radius: 20px;
+       margin-bottom:30px;
+       margin-left: 20px;
+       margin-right: 20px;
+       background: white;
+       
+
+       & .imagecards{
+           height: 180px;
+           width:340px;
+           border-radius: 20px 20px 0px 0px;
+           overflow: hidden;
+           position: relative;
+          
+           & img{
+               width: 340px;
+               height: 180px;
+               }
+               
+           & .topright{
+               width: 80px;
+               height: 20px;
+               position: absolute;
+               background: #99E2D0;
+               text-align: center;
+               padding: 5px;
+               border-radius: 2px;
+               top: 20px;
+               right: 15px;
+               color: green;
+               }
+           }
+           & .imageinfo{
+       
+               justify-content:space-around;
+               margin-right: 0px;
+           
+               & h2{
+                   
+                   font-size: 18px;
+                   margin-left: 20px;
+                   padding-bottom: 0px;
+                   margin-bottom: 0px;
+                   }
+               & h3{
+                   font-size: 18px;
+                   font-weight: 300;
+                   margin-left: 20px;
+                   padding-top: 0px;
+                   margin-top: 2px;
+                   float: left;
+                   }
+           }
+           & #heart{
+               
+               float: right;
+               font-size: 25px;
+               padding-top: 0px;
+               margin-top: 25px;
+               margin-right: 50px;
+               color: rgba(0,0,0,0.5);
+               cursor: pointer;
+               & .fa-solid{
+                   display: none;
+                   position: absolute;
+                   width: 20px;
+                   height: 15px;
+                   padding-right: 30px;
+                   color: $mainColor;
+                   }
+                  
+               & .fa-regular{
+                   position: absolute;
+                   width: 20px;
+                   height: 15px;
+                   padding-right: 30px;
+                   &:hover + .fa-solid{
+                       display: block;
+                       color: $mainColor;
+                  
+                 }
+               }
+           }
+       }
+   }
+   footer{
+       max-width: 100%;
+       height:180px;
+       background: rgba(0,0,0,0.8);
+       padding-top: 30px;
+       padding-bottom: 30px;
+       margin-top: 0px;
+       & img{
+           width:120px;
+           height: 20px;
+           filter:grayscale(1)invert(1);
+           margin-left: 70px;
+           padding-bottom: 20px;
+           }
+           & h4{
+             font-weight: 600;
+             @include footerH();
+             & i{
+                  font-size: 12px;
+                  color: white;
+                  margin-left: 70px;
+                  margin-right: 15px;
+                  }
+               }
+           & h5{
+               @include footerH();
+               margin-left: 70px;
+               font-weight: 300;
+              }
+       }
+   
+
+
+
+
+
+
+
 @media screen and (max-width :375px)
 {
     $secondaryColor :#FF79DA;
@@ -202,6 +565,8 @@
      background: $backgroundColor;
      width: 100%;
      padding-bottom: 50px;
+     margin-left: 0px;
+     margin-right: 0px;
      & h1{
          font-size: 23px;
          margin-left: 20px;
@@ -214,8 +579,8 @@
         box-shadow: 0 5px 10px rgb(214, 209, 209);
         border-radius: 20px;
         margin-bottom:30px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         background: white;
         
 
@@ -297,7 +662,7 @@
         }
     }
     footer{
-        width: 100%;
+        max-width: 100%;
         height:180px;
         background: rgba(0,0,0,0.8);
         padding-top: 30px;
@@ -331,5 +696,4 @@
 
 
 
-    
-
+ 

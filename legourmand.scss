@@ -229,7 +229,7 @@
         
            
         & .listContent{
-            height: 75px;
+            height: 50px;
             padding: 15px;
             align-items: center;
             animation: menucontent 6s forwards ease-in-out ;
@@ -298,4 +298,88 @@
                
             }
     }
+}
+
+
+
+
+/** laptop version **/
+
+
+$secondaryColor :#FF79DA;
+$mainColor:#9356DC;
+$backgroundColor:rgb(240, 237, 237);
+
+@mixin iconDecoration {
+    left: -70px;
+    height: 20px;
+    color: gray;
+    margin-right: 20px;
+
+}
+@mixin footerH {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+    
+}
+@mixin menuMargin {
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+@keyframes tick {
+    0%{
+        width: 0px;
+        height: 75px;
+        border-radius: 0px 25px 25px 0px;
+        background: none;
+    }
+    100%{
+      width: 70px;
+      height: 75px;
+      background: #99E2D0;
+    }
+  
+}
+@keyframes rotate {
+    0%{
+      display: none;
+      background: none;
+      padding: 0px;
+    }
+    
+    100%{
+         transform: rotate(-360deg);
+         display: block;
+    }
+    
+}
+
+@keyframes loadmenu {
+   0%{
+       width:auto;
+       height: 0px;
+       opacity: 0;
+   }
+   100%{
+       width:auto;
+       height:75px;
+       display: none;
+   }
+}
+@keyframes menucontent {
+   0%{
+   width: auto;
+   height: 0px;
+   opacity: 0;
+   }
+   100%{
+       width: auto;
+       height: 50px;
+       opacity: 1;
+   }
 }

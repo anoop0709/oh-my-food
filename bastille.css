@@ -277,6 +277,10 @@
     margin-top: 0px;
     font-size: 18px;
     font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: auto;
   }
   .menuList .listContent h4 {
     margin-top: 0px;
@@ -339,4 +343,4 @@
     font-weight: 300;
   }
 }
-/*# sourceMappingURL=fullplate.css.map */
+/*# sourceMappingURL=bastille.css.map */
