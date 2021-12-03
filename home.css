@@ -605,6 +605,9 @@ footer h5 {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+  #howitswork #colorchange {
+    background: #e8e3f5;
+  }
   #howitswork h1 {
     font-size: 22px;
     margin-left: 25px;

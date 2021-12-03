@@ -512,11 +512,16 @@
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
+    & #colorchange{
+        background:rgb(232, 227, 245);
+    
+      }
     & h1{
         font-size: 22px;
         margin-left: 25px;
         margin-bottom: 40px;
     }
+   
     & button{
         border-radius: 25px;
         background:rgb(240, 237, 237);
@@ -532,9 +537,6 @@
         padding-left: 0px;
         margin-left: 25px;
         box-shadow: 0px 2px 5px rgb(214, 212, 212);
-       
-     
-    
         & i:first-child{
             background:$mainColor;
             border-radius: 50%;
