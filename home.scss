@@ -169,6 +169,10 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
+   & #colorchange{
+    background:rgb(232, 227, 245);
+
+  }
    & h1{
        font-size: 25px;
        margin-bottom: 50px;

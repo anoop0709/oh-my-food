@@ -222,6 +222,10 @@ header img {
           justify-content: center;
 }
 
+#howitswork #colorchange {
+  background: #e8e3f5;
+}
+
 #howitswork h1 {
   font-size: 25px;
   margin-bottom: 50px;
