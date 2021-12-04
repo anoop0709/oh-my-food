@@ -249,9 +249,14 @@ header a .fa-arrow-left {
   margin-bottom: 15px;
   -webkit-animation: loadmenu 1s forwards ease-in-out;
           animation: loadmenu 1s forwards ease-in-out;
+  cursor: pointer;
 }
 
 #menuContainer .menuList .check {
+  display: none;
+}
+
+#menuContainer .menuList:hover .check {
   float: right;
   background: #99E2D0;
   border: none;
@@ -269,29 +274,20 @@ header a .fa-arrow-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  cursor: pointer;
+  -webkit-animation: tick 1s forwards ease-in-out;
+          animation: tick 1s forwards ease-in-out;
+  margin-right: 0px;
 }
 
-#menuContainer .menuList .check i {
+#menuContainer .menuList:hover i {
   color: #99E2D0;
   border-radius: 50%;
   background: white;
   padding: 4px;
-  float: right;
   position: absolute;
-  opacity: 0;
-}
-
-#menuContainer .menuList .check:hover {
-  -webkit-animation: tick 1s forwards ease-in-out;
-          animation: tick 1s forwards ease-in-out;
-  opacity: 1;
-}
-
-#menuContainer .menuList .check:hover i {
+  float: right;
   -webkit-animation: rotate 1s forwards ease-in-out;
           animation: rotate 1s forwards ease-in-out;
-  opacity: 1;
 }
 
 #menuContainer .menuList .listContent {
@@ -482,7 +478,7 @@ footer h5 {
   }
   body {
     margin: 0px;
-    width: 100%;
+    max-width: 375px;
     position: relative;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
@@ -556,7 +552,6 @@ footer h5 {
   }
   #menuContainer #order {
     margin-top: 30px;
-    margin-left: 100px;
     border-radius: 25px;
     padding: 15px;
     font-size: 16px;
@@ -609,8 +604,12 @@ footer h5 {
     margin-bottom: 15px;
     -webkit-animation: loadmenu 1s forwards ease-in-out;
             animation: loadmenu 1s forwards ease-in-out;
+    cursor: pointer;
   }
   .menuList .check {
+    display: none;
+  }
+  .menuList:hover .check {
     float: right;
     background: #99E2D0;
     border: none;
@@ -628,25 +627,19 @@ footer h5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    cursor: pointer;
+    -webkit-animation: tick 1s forwards ease-in-out;
+            animation: tick 1s forwards ease-in-out;
+    margin-right: 0px;
   }
-  .menuList .check i {
+  .menuList:hover i {
     color: #99E2D0;
     border-radius: 50%;
     background: white;
     padding: 4px;
-    float: right;
     position: absolute;
-    opacity: 0;
-  }
-  .menuList .check:hover {
-    -webkit-animation: tick 1s forwards ease-in-out;
-            animation: tick 1s forwards ease-in-out;
-  }
-  .menuList .check:hover i {
+    float: right;
     -webkit-animation: rotate 1s forwards ease-in-out;
             animation: rotate 1s forwards ease-in-out;
-    opacity: 1;
   }
   .menuList .listContent {
     height: 75px;
