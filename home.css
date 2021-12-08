@@ -409,6 +409,10 @@ footer {
   margin-top: 0px;
 }
 
+footer a {
+  text-decoration: none;
+}
+
 footer img {
   width: 120px;
   height: 20px;
@@ -446,7 +450,7 @@ footer h5 {
   font-weight: 300;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 360px) and (max-width: 765px) {
   @-webkit-keyframes loading {
     0% {
       -webkit-transform: rotate(0deg);
@@ -764,6 +768,9 @@ footer h5 {
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 0px;
+  }
+  footer a {
+    text-decoration: none;
   }
   footer img {
     width: 120px;

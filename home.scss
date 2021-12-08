@@ -333,6 +333,9 @@
        padding-top: 30px;
        padding-bottom: 30px;
        margin-top: 0px;
+       & a{
+           text-decoration: none;
+       }
        & img{
            width:120px;
            height: 20px;
@@ -364,7 +367,7 @@
 
 
 
-@media screen and (max-width :375px)
+@media screen and (min-width :360px) and (max-width :765px)
 {
     $secondaryColor :#FF79DA;
     $mainColor:#9356DC;
@@ -673,6 +676,9 @@
         padding-top: 30px;
         padding-bottom: 30px;
         margin-top: 0px;
+        & a{
+            text-decoration: none;
+        }
         & img{
             width:120px;
             height: 20px;

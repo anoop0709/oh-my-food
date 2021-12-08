@@ -150,6 +150,10 @@ header{
             margin-bottom: 20px;
             @include menuMargin();
         }
+       & #orderbtn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         & #order{
             margin-top: 30px;
             border-radius: 25px;
@@ -161,7 +165,7 @@ header{
             cursor: pointer;
             box-shadow: 0px 1px 5px rgb(139, 138, 138);
             width: 180px;
-            margin-left: 380px
+            }
         
          }    
          & #sectionHeading{
@@ -275,6 +279,9 @@ footer{
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 0px;
+    & a{
+        text-decoration: none;
+    }
     & img{
         width:120px;
         height: 20px;
@@ -305,7 +312,7 @@ footer{
 
 
 
-@media screen and (max-width :375px)
+@media screen and (min-width :360px) and (max-width :765px)
 {
     $secondaryColor :#FF79DA;
     $mainColor:#9356DC;
@@ -454,9 +461,12 @@ footer{
                 margin-bottom: 20px;
                 @include menuMargin();
             }
-            & #order{
+           & #orderbtn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & #order{
                 margin-top: 30px;
-                margin-left: 100px;
                 border-radius: 25px;
                 padding: 15px;
                 font-size: 16px;
@@ -466,8 +476,8 @@ footer{
                 cursor: pointer;
                 box-shadow: 0px 1px 5px rgb(139, 138, 138);
                 width: 180px;
-                margin-left: 100px;
              }    
+            }
         & #sectionHeading{
             @include menuMargin();
            padding-top: 10px;
@@ -580,6 +590,9 @@ footer{
         padding-top: 30px;
         padding-bottom: 30px;
         margin-top: 0px;
+        & a{
+            text-decoration: none;
+        }
         & img{
             width:120px;
             height: 20px;

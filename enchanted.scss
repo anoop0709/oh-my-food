@@ -147,9 +147,12 @@ header{
             margin-bottom: 20px;
             @include menuMargin();
         }
+        & #orderbtn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         & #order{
             margin-top: 30px;
-            margin-left: 380px;
             border-radius: 25px;
             padding: 15px;
             font-size: 16px;
@@ -159,6 +162,7 @@ header{
             cursor: pointer;
             box-shadow: 0px 1px 5px rgb(139, 138, 138);
             width: 180px;
+         }
          }    
          & #sectionHeading{
          @include menuMargin();
@@ -270,6 +274,9 @@ footer{
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 0px;
+    & a{
+        text-decoration: none;
+    }
     & img{
         width:120px;
         height: 20px;
@@ -295,7 +302,7 @@ footer{
         }
 }
 
-@media screen and (max-width :375px)
+@media screen and (min-width :360px) and (max-width : 765px)
 {
     $secondaryColor :#FF79DA;
     $mainColor:#9356DC;
@@ -377,7 +384,7 @@ footer{
 
  body{
     margin: 0px;
-    max-width: 375px;
+    width: 100%;
     position: relative;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,;
     }
@@ -444,6 +451,10 @@ footer{
                 margin-bottom: 20px;
                 @include menuMargin();
             }
+            & #orderbtn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
             & #order{
                 margin-top: 30px;
                 border-radius: 25px;
@@ -455,7 +466,7 @@ footer{
                 cursor: pointer;
                 box-shadow: 0px 1px 5px rgb(139, 138, 138);
                 width: 180px;
-                margin-left: 100px;
+             }
              }    
         & #sectionHeading{
             @include menuMargin();
@@ -569,6 +580,9 @@ footer{
         padding-top: 30px;
         padding-bottom: 30px;
         margin-top: 0px;
+        & a{
+            text-decoration: none;
+        }
         & img{
             width:120px;
             height: 20px;
