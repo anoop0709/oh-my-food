@@ -369,7 +369,7 @@ header img {
   float: left;
 }
 
-#restaurants .cardcontainer #heart {
+#restaurants .cardcontainer .heart {
   float: right;
   font-size: 25px;
   padding-top: 0px;
@@ -379,7 +379,7 @@ header img {
   cursor: pointer;
 }
 
-#restaurants .cardcontainer #heart .fa-solid {
+#restaurants .cardcontainer .heart .fa-solid {
   display: none;
   position: absolute;
   width: 20px;
@@ -388,14 +388,14 @@ header img {
   color: #9356DC;
 }
 
-#restaurants .cardcontainer #heart .fa-regular {
+#restaurants .cardcontainer .heart .fa-regular {
   position: absolute;
   width: 20px;
   height: 15px;
   padding-right: 30px;
 }
 
-#restaurants .cardcontainer #heart .fa-regular:hover + .fa-solid {
+#restaurants .cardcontainer .heart .fa-regular:hover + .fa-solid {
   display: block;
   color: #9356DC;
 }
@@ -721,13 +721,13 @@ footer h5 {
         justify-content: space-around;
     margin-right: 0px;
   }
-  #restaurants .cardcontainer .imageinfo h1 {
+  #restaurants .cardcontainer .imageinfo h2 {
     font-size: 18px;
     margin-left: 20px;
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
-  #restaurants .cardcontainer .imageinfo h2 {
+  #restaurants .cardcontainer .imageinfo h3 {
     font-size: 18px;
     font-weight: 300;
     margin-left: 20px;
